@@ -1,0 +1,36 @@
+# ============================================================
+#  VillagerRabatt - Konfiguration
+# ============================================================
+
+# Rabatt in Prozent, der auf die Emerald-Kaufpreise geheilter Villager
+# angewendet wird (dauerhaft, für jeden Spieler).
+discount-percent: 50
+
+# Wenn true: Rabatt gilt nur für Trades, bei denen der Spieler mit
+# Emeralds/Emerald-Blöcken bezahlt (klassische "Kauf"-Trades). Trades bei
+# denen der Spieler Rohstoffe gegen Emeralds tauscht ("Verkaufen") bleiben
+# unverändert.
+only-emerald-trades: true
+
+# Namensschild über geheilten/markierten Villagern. Schwebt NICHT permanent,
+# sondern wird nur eingeblendet, während ein Spieler den Villager gerade
+# direkt anvisiert (sonst wäre bei vielen markierten Villagern alles voll
+# mit Namensschildern).
+show-nametag: true
+nametag: '&a&lRabatt-Händler'
+
+# Wie viele Blöcke weit ein Spieler den Villager anvisieren muss, damit das
+# Namensschild eingeblendet wird.
+nametag-max-distance: 6.0
+
+# Wie oft (in Ticks, 20 = 1 Sekunde) geprüft wird, wer gerade welchen
+# Villager anvisiert. Kleinere Werte reagieren schneller, kosten aber mehr
+# Leistung.
+nametag-check-interval-ticks: 10
+
+# Nachricht beim Öffnen des Handelsfensters eines markierten Villagers.
+# {percent} wird durch den Rabatt-Prozentsatz ersetzt.
+trade-open-message: '&7Dieser Händler hat einen dauerhaften Rabatt von &a{percent}%&7 auf alle Kauf-Preise (gilt für jeden Spieler).'
+
+# Standard-Radius (in Blöcken) für "/vrabatt markall" ohne Angabe.
+mark-radius-default: 50
